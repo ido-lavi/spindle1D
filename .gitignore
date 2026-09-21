@@ -1,0 +1,18 @@
+# macOS / MATLAB cruft
+.DS_Store
+*.asv
+*.m~
+slprj/
+
+# Generated figures, movies, diagnostic images
+output/*
+!output/.gitkeep
+
+# Large generated time-series — regenerate with solver/PDEsolver.m (mostly NOT tracked)
+data/fields_*.mat
+data/nuc_t_*.mat
+# ...except the Figure 2 (M0) inputs, shipped so FigureDynamics reproduces Fig 2:
+!data/fields_M0_eps0.200.mat
+!data/nuc_t_M0_eps0.200.mat
+
+# The small steady-state snapshots (data/sim_*.mat) ARE tracked on purpose.
